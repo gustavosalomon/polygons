@@ -14,7 +14,7 @@ if not MONGO_URI:
 
 # Conexión a MongoDB Atlas
 client = MongoClient(MONGO_URI)
-db = client["smart_parking"]
+db = client["smart_parking_web"]
 col = db["polygons"]
 
 @app.route("/polygons", methods=["GET"])
